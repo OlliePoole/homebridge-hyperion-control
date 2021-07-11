@@ -145,7 +145,7 @@ HyperionControl.prototype = {
   
     setBrightness: function (value, callback){
       
-        this.fetchData('{"command":"adjustment","adjustment":{"brightness":'+ value +'}}', function (response) {
+        this.fetchData('{"command":"adjustment","adjustment":{"brightness":value}}', function (response) {
 
             this.log("Set Brightness to: " + value) + "%";
 
